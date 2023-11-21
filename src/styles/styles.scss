@@ -1,0 +1,279 @@
+.ozx_settings-wrap {
+    display: none;
+}
+
+.ozx_settings-wrap.enabled {
+    display: block;
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    z-index: 999;
+        .ozx_settings {
+            width: 300px;
+            height: 300px;
+            z-index: 5;
+            border-radius: 1rem;
+            padding: 10px;
+            overflow: hidden;
+            height: 100%;
+            background-color: #FFF;
+            color: rgba(58, 53, 65, 0.87);
+            -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            border-radius: 6px;
+            box-shadow: 0px 2px 1px -1px rgb(58 53 65 / 20%), 0px 1px 1px 0px rgb(58 53 65 / 14%), 0px 1px 3px 0px rgb(58 53 65 / 12%);
+            box-shadow: 0px 2px 10px 0px rgb(58 53 65 / 10%);
+        }
+        .ozx-layers-wrap {
+            overflow: auto;
+            height: 300px;
+        }
+}
+
+.ozx-error {
+    border: 1px solid #e53935;
+}
+
+.ozx_h2 {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Inter,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.15px;
+    color: rgba(58, 53, 65, 0.87);  
+    margin-bottom: 15px;  
+}
+
+.ozx_layer {
+border: 1px solid #ddd;
+padding: 10px;
+border-radius: 4px;
+margin-bottom: 10px;
+
+    &-title {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Inter,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.15px;
+    color: rgba(58, 53, 65, 0.87);
+        
+        &-editable {
+        background: #fff;
+        border: 1px solid rgba(58, 53, 65, 0.22);
+        border-radius: 2px;
+        height: 25px;
+        color: inherit;
+        padding: 0 5px;
+        outline: none;
+        }
+    }
+
+    &-bottom {
+        display: flex;
+    }
+}
+
+.ozx_btn {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: inherit;
+    font-family: Inter,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.75;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #FFF;
+    min-width: 64px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #9155FD;
+    box-shadow: 0px 3px 1px -2px rgb(58 53 65 / 20%), 0px 2px 2px 0px rgb(58 53 65 / 14%), 0px 1px 5px 0px rgb(58 53 65 / 12%);
+    font-weight: 500;
+    border-radius: 5px;
+    line-height: 1.71;
+    letter-spacing: 0.3px;
+    padding: 0.46875rem 0.75rem;
+    box-shadow: 0px 4px 8px -4px rgb(58 53 65 / 42%);
+    padding: 0.46875rem 1.375rem;
+    padding: 0.25rem 0.5625rem;
+
+    &:hover, &.active {
+        text-decoration: none;
+        background-color: #804BDF;
+        box-shadow: 0px 6px 18px -8px rgb(58 53 65 / 56%);
+    }
+    &-danger {
+        background-color: rgb(230 55 87 / 38%);
+        color: #ea4a68;
+        &:hover, &.active {
+            background-color: #ff3e1d;
+            color: #fff;
+        }
+    }
+}
+
+@for $i from 1 through 4 {
+    .ozms-#{$i} {
+        margin-left: #{$i}em;
+    }
+    .ozme-#{$i} {
+        margin-right: #{$i}em;
+    }
+    .ozmt-#{$i} {
+        margin-top: #{$i}em;
+    }
+    .ozmb-#{$i} {
+        margin-bottom: #{$i}em;
+    }
+    .ozm-#{$i} {
+        margin: #{$i}em;
+    }
+    .ozmy-#{$i} {
+        margin-top: #{$i}em;
+        margin-bottom: #{$i}em;
+    }
+    .ozmx-#{$i} {
+        margin-left: #{$i}em;
+        margin-right: #{$i}em;
+    }
+}
+
+.ozd-none {
+    display: none;
+}
+
+.ozd-flex {
+    display: flex;
+}
+
+.oz_label {
+    display: block;
+    span {
+        display: block;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    select {
+        border-radius: 0.25rem;
+        padding: 3px 1px;
+        border-color: #c5d8f3;
+        background: #f3f8ff;
+        color: #536f97;
+        padding: 5px;
+        outline:none;
+    }
+}
+
+.oz_code {
+    font-size: .85em;
+    max-width: 100%;
+    background: #1f2020;
+    border-radius: 4px 0 0 4px;
+    padding: 2px 5px;
+    color: #f65170;
+    font-family: monospace;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+.ozw-100 {
+    width:100%;
+    display: block;
+}
+
+.ozicon {
+    max-width: 80%;
+    position: relative;
+    top: 0px;
+    margin: auto;
+    display: block;
+    fill: #2c7be5;
+}
+
+.ozx_draggable {
+    cursor: move;
+}
+
+.ozx-active {
+    background-size: 250px;
+}
+
+.ozx_select {
+    &-ul {
+        display: flex;
+        width: 100%;
+        margin: 10px 0;
+    }
+    &-li {
+        display: flex;
+        width: 64px;
+        height: 64px;
+        border:2px solid transparent;
+        margin-right: 10px;
+        background-size: cover;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &.selected {
+            border:2px solid #f65170;
+        }
+    }
+}
+
+.ozx-bottom-btn {
+    padding: 10px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+.ozx_btn-icon {
+    background: #f3f8ff;
+    padding: 5px;
+    border: 1px solid #c5d8f3;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+
+    svg {
+        opacity: 0.5;
+    }
+
+    &:hover, &.active {
+        svg {
+        opacity:1;
+        }
+    }
+}
